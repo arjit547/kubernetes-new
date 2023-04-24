@@ -1,0 +1,24 @@
+
+
+
+
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  namespace: game-204873
+  name: ingress-204889
+  annotations:
+    alb.ingress.kubernetes.io/scheme: internet-facing
+    alb.ingress.kubernetes.io/target-type: ip
+spec:
+  ingressClassName: alb
+  rules:
+    - http:
+        paths:
+        - path: /
+          pathType: Prefix
+          backend:
+            service:
+              name: service-204891
+              port:
+                number: 80
