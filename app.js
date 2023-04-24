@@ -1,7 +1,7 @@
 const http = require('http');
 
 const server = http.createServer((req, res) => {
-  res.end('MOOGLELABS-Seasia-124567drfher');
+  res.end('MOOGLELABS-Seasia-123');
 });
 
 server.listen(3000, () => {
