@@ -25,6 +25,12 @@ spec:
         name: app-204892
         ports:
         - containerPort: 3000
+        env:
+        - name: latest
+          valueFrom:
+            configMapKeyRef:
+              name: app-204892-configmap
+              key: image-tag
 ---
 apiVersion: v1
 kind: Service
