@@ -24,7 +24,7 @@ pipeline {
             steps {
                 withAWS(credentials: 'my-aws-secret') {
                     withCredentials([file(credentialsId: "${KUBECONFIG_ID}", variable: 'KUBECONFIG')]) {
-                        sh "kubectl apply -f SampleApp.yaml"
+                        sh "kubectl apply -f GameApp.yaml"
                         sh "kubectl apply -f service-account.yaml"
                         sh "kubectl apply -f Ingress.yaml"
                     }
