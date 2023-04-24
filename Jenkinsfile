@@ -2,7 +2,6 @@ pipeline {
     agent any
     environment {
         AWS_DEFAULT_REGION = 'us-east-1'
-        ECR_REPO = 'seasiam'
         KUBECONFIG_ID = 'my-kubeconfig'
     }
     stages {
