@@ -21,8 +21,6 @@ pipeline {
             steps {
                 withAWS(credentials: 'my-aws-secret') {
                     withCredentials([file(credentialsId: "${KUBECONFIG_ID}", variable: 'KUBECONFIG')]) {
-                        sh "kubectl delete deployment.apps/deployment-204890 "
-                        sh "kubectl delete service/service-204891"
                         sh "kubectl apply -f GameApp.yaml"
                         sh "kubectl apply -f Ingress.yaml"
                     }
