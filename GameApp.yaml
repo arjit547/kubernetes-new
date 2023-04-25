@@ -34,7 +34,7 @@ metadata:
 spec:
   ports:
     - port: 80
-      targetPort: 3000
+      targetPort: 300
       protocol: TCP
   type: NodePort
   selector:
