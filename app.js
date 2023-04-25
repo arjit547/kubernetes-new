@@ -1,7 +1,7 @@
 const http = require('http');
 
 const server = http.createServer((req, res) => {
-  res.end('MOOGLELABS-SEASIA-DEVOPS-2');
+  res.end('MOOGLELABS-DEVOPS');
 });
 
 server.listen(3000, () => {
