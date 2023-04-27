@@ -10,9 +10,6 @@ metadata:
   annotations:
     alb.ingress.kubernetes.io/scheme: internet-facing
     alb.ingress.kubernetes.io/target-type: ip
-    alb.ingress.kubernetes.io/certificate-arn: arn:aws:acm:us-east-1:435770184212:certificate/32eac96e-9a63-4946-acb9-e495f3254585
-    alb.ingress.kubernetes.io/listen-ports: '[{"HTTP": 80}, {"HTTPS": 443}]'
-    external-dns.alpha.kubernetes.io/hostname: awsdeploy.tk
 spec:
   ingressClassName: alb
   rules:
